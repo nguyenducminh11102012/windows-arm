@@ -37,7 +37,7 @@ EXPOSE 8006 3389
 ENV VERSION="tiny10"
 ENV RAM_SIZE="0.5G"
 ENV CPU_CORES="1"
-ENV DISK_SIZE="32G
+ENV DISK_SIZE="32G"
 ENV KVM="N"
 
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]
