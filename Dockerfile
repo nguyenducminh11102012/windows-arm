@@ -34,9 +34,10 @@ ADD --chmod=664 https://github.com/qemus/virtiso-arm/releases/download/v0.1.266-
 VOLUME /storage
 EXPOSE 8006 3389
 
-ENV VERSION="10e"
-ENV RAM_SIZE="2G"
-ENV CPU_CORES="4"
-ENV DISK_SIZE="64G"
+ENV VERSION="tiny10"
+ENV RAM_SIZE="0.5G"
+ENV CPU_CORES="1"
+ENV DISK_SIZE="32G
+ENV KVM="N"
 
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]
